@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OnlineFoodHub.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/images/logo.jpeg" alt="OnlineFoodHub.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#special-dishes">Popular Dishes</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to OnlineFoodHub</h1>
+        <p>Order your foods at anytime and we'll safely deliver them straight to your home.We will deliver it on time so you are not hungry.</p>
+        
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="/images/catering.jpeg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">We involve in the planning and organisation of food and beverage services for various types of events.</p>
+            </div>
+            <div class="box">
+                <img src="/images/delivery.jpeg" alt="">
+                <h2 class="h-secondary center">Food Delivery</h2>
+                <p class="center">We are helping you to get fresh and delicious food in few minutes by using our website.</p>
+            </div>
+            <div class="box">
+                <img src="/images/odering.jpeg" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">We ensure you the best quality food of your choice either pickup or delivery.</p>
+            </div>
+        </div>
+    </section>
+    <section id="special-dishes">
+        <h1 class="h-primary center">Our Popular Dishes</h1>
+        <div id="dishes">
+            <div class="box">
+                <img src="/images/paneer tikka.jpeg" alt="">
+                <h2 class="h-secondary center">Paneer Tikka</h2>
+            </div>
+            <div class="box">
+                <img src="/images/butter garlic naan.jpeg" alt="">
+                <h2 class="h-secondary center">Butter Garlic Naan</h2>
+            </div>
+            <div class="box">
+                <img src="/images/shahi paneer.jpeg" alt="">
+                <h2 class="h-secondary center">Shahi Paneer</h2>
+            </div>
+            <div class="box">
+                <img src="/images/thali.jpeg" alt="">
+                <h2 class="h-secondary center">Thali</h2>
+           </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="" onsubmit="saveFormData()">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address: </label>
+                    <textarea name="address" id="address" placeholder="Enter the address for delivery" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                <button onclick="showSavedData()">Show Saved Data</button>
+            </form>
+            
+        
+        </div>
+    </section>
+    
+    <script src="data.js"></script>
+  
+    
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.onlinefoodhub.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+
+</html>
